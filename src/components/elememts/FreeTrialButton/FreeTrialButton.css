@@ -1,0 +1,13 @@
+.FreeTrialButton {
+    width: 245px;
+    height: 55px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    background: linear-gradient(to right, rgba(107, 255, 202, 1), rgba(0, 255, 71, 1));
+    text-transform: uppercase;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+}

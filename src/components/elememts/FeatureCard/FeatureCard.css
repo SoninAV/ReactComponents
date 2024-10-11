@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.feature-card {
+    width: 388px;
+    height: 317px;
+    color: #2F2A37;
+    font-family: sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin: 16px;
+}
+
+.feature-card__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature-card__title {
+    font-size: 24px;
+    margin: 20px 0px 30px;
+}
+
+.feature-card__text {
+    font-size: 14px;
+}

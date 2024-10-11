@@ -1,4 +1,4 @@
-import checkmarkImage from '../../../Checkmark.png';
+import checkmarkImage from '../../../img/Checkmark.png';
 
 function CheckmarkBlock({children}) {
     const blockStyle = {
