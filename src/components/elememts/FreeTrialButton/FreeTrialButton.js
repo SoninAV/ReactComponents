@@ -1,12 +1,8 @@
 import styles from './FreeTrialButton.css';
 
-const FreeTrialButton = () => {
-    const handleClick = () => {
-        alert('Вы нажали на кнопку "ПОПРОБОВАТЬ БЕСПЛАТНО"');
-    };
-
+const FreeTrialButton = ({ onClick }) => {
     return (
-        <button className='FreeTrialButton' onClick={handleClick} style={styles}>
+        <button className='FreeTrialButton' onClick={onClick} style={styles}>
             Попробовать бесплатно
         </button>
     );

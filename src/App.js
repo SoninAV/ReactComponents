@@ -1,9 +1,21 @@
+import React, { useState } from 'react';
 import CheckmarkBlock from './components/elememts/CheckmarkBlock/CheckmarkBlock';
 import FreeTrialButton from './components/elememts/FreeTrialButton/FreeTrialButton';
+import FeedbackForm from './components/blocks/FeedbackForm/FeedbackForm';
 import FeaturesSection from './FeaturesSection';
 import './index.css';
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className='body'>
       <div className='features'>
@@ -11,8 +23,9 @@ function App() {
         <p className='features__subtitle'>Поможем перенести корпоративную академию, базу знаний, учебные курсы,
         настроим систему мотивации обучения, круглосуточная поддержка.</p>
         <FeaturesSection />
-        <div className='features__button'>
-          <FreeTrialButton />
+        <div className='button'>
+          <FreeTrialButton onClick={handleOpenModal}/>
+          <FeedbackForm isOpen={isModalOpen} onClose={handleCloseModal} />
         </div>
       </div>
       <div className='advantages'>
@@ -27,6 +40,10 @@ function App() {
         <CheckmarkBlock>Готовый шаблон для организации обучения</CheckmarkBlock>
         <CheckmarkBlock>Сообщества</CheckmarkBlock>
         <CheckmarkBlock>Любое количество уроков и учебных программ</CheckmarkBlock>
+        <div className='button'>
+          <FreeTrialButton onClick={handleOpenModal}/>
+          <FeedbackForm isOpen={isModalOpen} onClose={handleCloseModal} />
+        </div>
       </div>
     </div>
   );

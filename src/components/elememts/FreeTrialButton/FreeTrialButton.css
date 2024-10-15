@@ -1,4 +1,6 @@
 .FreeTrialButton {
+    /* display: flex; */
+    /* justify-items: center; */
     width: 245px;
     height: 55px;
     padding: 10px 20px;
